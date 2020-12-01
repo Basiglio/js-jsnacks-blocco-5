@@ -47,3 +47,57 @@ function arrayMinMax(array, minNum, maxNum) {
   }
   return nuovoArray;
 }
+
+
+
+// ESERCIZIO 3
+// è POSSIBILE DEFINIRE UNA FUNZIONE IN MODO BREVE
+console.log("Esercizio 3 con Arrow function");
+const myFunction = () => 4 + 1;
+const resultFunction = myFunction();
+console.log(resultFunction);
+
+
+// ESERCIZIO 4
+console.log("Esercizio 4 Object");
+var studenti =[
+  {
+    nome: "emilio",
+    cognome: "furnari",
+    eta: 33,
+  },
+  {
+    nome: "pippo",
+    cognome: "rossi",
+    eta: 33,
+  },
+  {
+    nome: "topolino",
+    cognome: "bianchi",
+    eta: 85,
+  },
+  {
+    nome: "paperino",
+    cognome: "duck",
+    eta: 80,
+  },
+  {
+    nome: "pietro",
+    cognome: "gambadilegno",
+    eta: 80,
+  },
+];
+let nome = prompt("Scrivi il tuo nome?");
+let cognome = prompt("qual'è il tuo cognome?");
+let eta = parseInt(prompt("quanti anni hai?"));
+// POSSO DEFINIRE IL MIO ATTIBUTO:VALORE COME IL NOME STESSO DELLA DELLA VARIABILE DALLA QUALE PRELEVO IL DATO
+const nuovoStudente = {
+  nome,
+  cognome,
+  eta,
+};
+console.log(nuovoStudente);
+
+studenti.push(nuovoStudente);
+
+console.log(studenti);
