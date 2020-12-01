@@ -97,7 +97,29 @@ const nuovoStudente = {
   eta,
 };
 console.log(nuovoStudente);
-
 studenti.push(nuovoStudente);
-
 console.log(studenti);
+
+
+
+// ESERCIZIO 5
+console.log("ESERCIZIO 5 REST(...number) e SPREAD(...)");
+function somma(...number) {
+  var somma = 0
+  for (var i = 0; i < number.length; i++) {
+   somma = somma + number[i];
+  }
+  return somma;
+}
+// POSSO METTERE N ELEMENTI NELLA MIA FUNZIONE
+var result = somma(5,5,5,5,5,5,5,5,5,5);
+console.log(result);
+
+
+
+// ESERCIZIO 6
+console.log("Esercizio 6 backitick");
+// CONCATENAZIONE CON BACKTICK
+let string = 'Qui';
+let stringTwo = 'Qua';
+console.log(`${string} Quo ${stringTwo} Andarono al mercato`);
